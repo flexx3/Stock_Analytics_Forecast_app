@@ -1,0 +1,13 @@
+dash==2.9.3
+numpy
+dotenv
+sqlite3
+pathlib
+requests
+joblib
+glob
+os
+pandas
+plotly
+arch
+gunicorn
