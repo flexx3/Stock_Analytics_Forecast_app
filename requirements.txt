@@ -2,7 +2,6 @@ dash==2.9.3
 numpy
 pandas
 plotly
-sqlite3
 requests
 pathlib
 joblib
