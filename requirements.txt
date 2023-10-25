@@ -1,13 +1,13 @@
 dash==2.9.3
 numpy
-dotenv
+pandas
+plotly
 sqlite3
-pathlib
 requests
+pathlib
 joblib
 glob
 os
-pandas
-plotly
+dotenv
 arch
 gunicorn
