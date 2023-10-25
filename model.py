@@ -15,7 +15,7 @@ class GarchModel:
         self.ticker = ticker
         self.repo = repo
         self.use_new_data = use_new_data
-        self.model_directory = os.getenv('MODEL_DIRECTORY')
+        self.model_directory = os.environ.get('MODEL_DIRECTORY')
         
     def wrangle_data(self, n_observations):
         #add new data to database if required
