@@ -9,7 +9,7 @@ load_dotenv()  # take environment variables from .env.
 
 class StockDataApi:
     
-    def __init__(self, api_key=os.getenv('API_KEY')):
+    def __init__(self, api_key=os.environ.get('API_KEY')):
         
         self.__api_key = api_key
         
