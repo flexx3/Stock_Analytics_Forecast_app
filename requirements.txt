@@ -5,8 +5,6 @@ plotly
 requests
 pathlib
 joblib
-glob
-os
-dotenv
+python-dotenv
 arch
 gunicorn
