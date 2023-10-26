@@ -152,7 +152,7 @@ app.layout = html.Div([
 #function to get data
 def wrangle(ticker, n_observations, use_new_data):
     #set up connection to database
-    connection = sqlite3.connect(os.getenv('DB_NAME'), check_same_thread=False)
+    connection = sqlite3.connect(os.environ.get('DB_NAME'), check_same_thread=False)
     #instantiate repo FOR SQLRepository
     repo = SQLRepository(ticker=ticker, connection=connection)
     if use_new_data == True:
@@ -360,7 +360,7 @@ output_data = None
 )
 
 def model_prediction(ticker, n_observations,clicks, n_days, plot_bar):
-    connection = sqlite3.connect(os.getenv('DB_NAME'), check_same_thread=False)
+    connection = sqlite3.connect(os.environ.get('DB_NAME'), check_same_thread=False)
     #instantiate repo FOR SQLRepository
     repo = SQLRepository(ticker=ticker, connection=connection)
     model_stock = GarchModel(ticker=ticker, repo=repo, use_new_data=False)
