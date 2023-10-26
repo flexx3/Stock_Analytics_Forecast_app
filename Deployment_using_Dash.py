@@ -55,7 +55,7 @@ server = app.server
 
 app.layout = html.Div([
         html.Div([html.H1("Stock App", style={'text-align':'left'}),
-               html.Img(src="./assets/stock-icon.png")
+               html.Img(src="./stock-icon.png")
         
     ],  className= 'banner'),
     
