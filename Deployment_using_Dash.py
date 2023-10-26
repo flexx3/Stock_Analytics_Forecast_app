@@ -15,7 +15,7 @@ import plotly.express as px
 from data import SQLRepository, StockDataApi
 import sqlite3
 from dash import Dash, html, dash_table, dcc, callback, Output, Input, State
-import dash_bootstrap_components as dbc
+#import dash_bootstrap_components as dbc
 
 
 # In[ ]:
